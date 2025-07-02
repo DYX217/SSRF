@@ -5,7 +5,7 @@ LLM-As-Chatbot, an open source project that provides LLM-powered chatbot service
 
 
 ## Version
-Favorites-web Project latest
+LLM-As-Chatbot Project latest
 
 ## Attack Vector
 In the LLM-As-Chatbot project, the discord_app.py uses `urlextract`, a Python third-party library for extracting URL links from text to extract urls from user input. Then the project uses the user-supplied URL as an argument to the Python `urllib` library function `urlopen()` through a series of function calls. Since the input is not properly sanitized or restricted, an attacker can construct a malicious URL to trigger a server-side request forgery (SSRF). This can cause the attacker to make arbitrary server-side HTTP requests to internal services or external systems.
