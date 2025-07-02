@@ -189,19 +189,20 @@ def _parse_html(self, url):
 
 
 2. Install the required Python packages on host1(9.134.210.173), download the required model files, and run the project.
-![normal access](https://github.com/DYX217/directory-traversal/blob/main/image/normal.png)
+![normal access](https://github.com/DYX217/SSRF/blob/main/images/1.png)
 
 3. Test whether the chatbot status is online in Discord, which indicates whether the previous operation is successful.
-
+![normal access](https://github.com/DYX217/SSRF/blob/main/images/2.png)
 
 4. Create a simple html page on host2(9.134.209.238) and use tcpdump to capture traffic from host1.
-
+![normal access](https://github.com/DYX217/SSRF/blob/main/images/3.png)
 
 5. Ask the chatbot a question on Discord, which include a URL pointing to host2.
-
+![normal access](https://github.com/DYX217/SSRF/blob/main/images/4.png)
 
 6. From the console output of host1, the answer in discord and the packet capture record on host2, it can be seen that the chatbot accessed the link specified in the question.
-
+![normal access](https://github.com/DYX217/SSRF/blob/main/images/5.png)
+![normal access](https://github.com/DYX217/SSRF/blob/main/images/6.png)
 
 ## Impact
 
